@@ -4,6 +4,14 @@ body{
     text-align: center;
 }
 
+.author{
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid grey;
+    width:240px;
+    height:170px;
+}
+
 .container{
     margin-top:100px;
 }
@@ -29,10 +37,31 @@ body{
 .help_content{
     margin: 0 auto;
     margin-top: 10px;
-    width:350px;
+    width:280px;
     height:200px;
+    border: 2px;
     border-style: solid;
-    border-color: black;
+    border-color: grey;
+    border-radius: 8px;
+    line-height: 2.5;
+}
+
+.help_HowToPlay{
+    width: 520px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    line-height: 1.7;
+}
+
+.help_Functions{
+    width: 550px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    line-height: 1.7;
 }
 
 .br1{
