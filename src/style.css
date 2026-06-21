@@ -27,8 +27,22 @@ body{
 }
 
 .help_content{
+    margin: 0 auto;
+    margin-top: 100px;
     width:350px;
     height:200px;
     border-style: solid;
     border-color: black;
+}
+
+.br1{
+    color:green;
+}
+
+.br2{
+    color:yellow;
+}
+
+.br3{
+    color:grey;
 }
