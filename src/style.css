@@ -20,6 +20,8 @@ body{
     font-size:15px;
     border-radius:10px;
     cursor:pointer;
-    margin-bottom: 200px;
-    margin-top:50px;
+}
+
+.author{
+    margin-top:65px;
 }
