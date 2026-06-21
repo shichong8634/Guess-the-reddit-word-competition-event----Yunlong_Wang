@@ -4,3 +4,22 @@ body{
     text-align: center;
 }
 
+.container{
+    margin-top:100px;
+}
+
+.title{
+    text-align: center;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.index-button{
+    width:120px;
+    padding:15px;
+    font-size:15px;
+    border-radius:10px;
+    cursor:pointer;
+    margin-bottom: 200px;
+    margin-top:50px;
+}
