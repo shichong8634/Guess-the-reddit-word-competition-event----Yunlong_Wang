@@ -75,3 +75,14 @@ body{
 .br3{
     color:grey;
 }
+
+#legend{
+    border:1px solid gray;
+    width:200px;
+    height:200px;
+    margin:auto;
+    padding:15px;
+    border-radius:10px;
+    color:dimgray;
+
+}

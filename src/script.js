@@ -102,11 +102,31 @@ function checkGuess() {
 
     else {
 
-        document.getElementById("result")
-            .innerHTML =
-            "Wrong Guess!";
-    }
+        let feedback = "";
 
+        for(let i = 0; i < guess.length; i++){
+
+            if(i < answer.length){
+
+                if(guess[i] === answer[i]){
+                    feedback += guess[i] + "🟩";
+
+                }
+
+                else if(answer.includes(guess[i])){
+                    feedback += guess[i] + "🟨";
+
+                }
+
+                else{
+                    feedback += guess[i] + "⬜";
+                }
+            }
+        }
+
+        document.getElementById("result")
+            .innerHTML = feedback;
+    }
 
 }
 
