@@ -70,6 +70,22 @@ function checkGuess() {
             .innerHTML =
             "💓🤗🤗🤗💓 Correct!";
 
+        setTimeout(function(){
+
+            attempts = 0;
+
+            document.getElementById("attempts")
+                .innerHTML = "Attempts: 0/6";
+
+            generateWord();
+
+            document.getElementById("result")
+                .innerHTML = "";
+
+            document.getElementById("guessInput")
+                .value = "";
+
+        }, 1500);
     }
 
     else if (attempts >= 6) {
