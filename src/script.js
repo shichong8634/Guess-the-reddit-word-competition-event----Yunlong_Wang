@@ -31,6 +31,8 @@ function generateWord(){
 
     answer = currentWord.word;
 
+    console.log("New Word:", answer);
+
     document.getElementById("hint").innerHTML =
         "Hint: " + currentWord.hint;
 }
@@ -70,8 +72,9 @@ function checkGuess() {
             .innerHTML =
             "💓🤗🤗🤗💓 Correct!";
 
-
         setTimeout(function(){
+
+            console.log("Next Question");
 
             attempts = 0;
 
@@ -84,7 +87,7 @@ function checkGuess() {
                 .innerHTML = "";
 
             document.getElementById("guessInput")
-                .value = "";
+                .value = ""
 
         }, 1500);
     }
