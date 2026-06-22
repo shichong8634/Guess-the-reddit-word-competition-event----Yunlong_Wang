@@ -29,6 +29,7 @@ const answer = currentWord.word;
 document.getElementById("hint").innerHTML =
     "Hint: " + currentWord.hint;
 
+
 let attempts = 0;
 
 let score = 0;
