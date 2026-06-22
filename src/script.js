@@ -30,7 +30,13 @@ const words = [
     }
 ];
 
-const answer = words[Math.floor(Math.random() * words.length)];
+const currentWord =
+    words[Math.floor(Math.random() * words.length)];
+
+const answer = currentWord.word;
+
+document.getElementById("hint").innerHTML =
+    "Hint: " + currentWord.hint;
 
 let attempts = 0;
 
