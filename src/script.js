@@ -8,12 +8,27 @@ selectBox.onchange = function () {
 }
 
 const words = [
-    "KARMA",
-    "MEME",
-    "UPVOTE",
-    "MOD",
-    "COMMENT"
-]
+    {
+        word: "KARMA",
+        hint: "Reddit reputation score"
+    },
+    {
+        word: "MEME",
+        hint: "Funny content shared online"
+    },
+    {
+        word: "UPVOTE",
+        hint: "Positive reaction on Reddit"
+    },
+    {
+        word: "MOD",
+        hint: "Short for moderator"
+    },
+    {
+        word: "COMMENT",
+        hint: "Reply under a post"
+    }
+];
 
 const answer = words[Math.floor(Math.random() * words.length)];
 
