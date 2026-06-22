@@ -1,1 +1,7 @@
-
+{
+  "name": "reddit-word-game",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "echo 'static site'"
+  }
+}
