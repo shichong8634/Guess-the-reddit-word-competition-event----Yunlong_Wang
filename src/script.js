@@ -70,6 +70,7 @@ function checkGuess() {
             .innerHTML =
             "💓🤗🤗🤗💓 Correct!";
 
+
         setTimeout(function(){
 
             attempts = 0;
