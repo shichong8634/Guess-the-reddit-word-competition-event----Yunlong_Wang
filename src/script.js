@@ -128,6 +128,7 @@ function checkGuess() {
             .innerHTML = feedback;
     }
 
+
 }
 
 function restartGame(){
