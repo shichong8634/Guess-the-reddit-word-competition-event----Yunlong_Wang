@@ -31,6 +31,8 @@ document.getElementById("hint").innerHTML =
 
 let attempts = 0;
 
+let score = 0;
+
 function checkGuess() {
     let guess =
         document.getElementById("guessInput")
@@ -44,6 +46,12 @@ function checkGuess() {
         "Attempts: " + attempts + "/6";
 
     if (guess === answer) {
+
+        score += 1;
+
+        document.getElementById("score")
+            .innerHTML =
+            "Score: " + score;
 
         document.getElementById("result")
             .innerHTML =
