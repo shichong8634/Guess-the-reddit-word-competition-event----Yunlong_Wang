@@ -21,13 +21,21 @@ const words = [
     }
 ];
 
-const currentWord =
-    words[Math.floor(Math.random() * words.length)];
+let currentWord;
+let answer;
 
-const answer = currentWord.word;
+function generateWord(){
 
-document.getElementById("hint").innerHTML =
-    "Hint: " + currentWord.hint;
+    currentWord =
+        words[Math.floor(Math.random() * words.length)];
+
+    answer = currentWord.word;
+
+    document.getElementById("hint").innerHTML =
+        "Hint: " + currentWord.hint;
+}
+
+generateWord();
 
 
 let attempts = 0;
@@ -35,6 +43,10 @@ let attempts = 0;
 let score = 0;
 
 function checkGuess() {
+    if(attempts >= 6){
+        return;
+    }
+
     let guess =
         document.getElementById("guessInput")
             .value
@@ -76,4 +88,26 @@ function checkGuess() {
     }
 
 
+}
+
+function restartGame(){
+
+    attempts = 0;
+
+    generateWord();
+
+    document.getElementById("attempts")
+        .innerHTML = "Attempts: 0/6";
+
+    document.getElementById("result")
+        .innerHTML = "";
+
+    document.getElementById("guessInput")
+        .disabled = false;
+
+    document.getElementById("submitBtn")
+        .disabled = false;
+
+    document.getElementById("guessInput")
+        .value = "";
 }
