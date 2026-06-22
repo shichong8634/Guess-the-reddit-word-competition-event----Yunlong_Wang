@@ -5,18 +5,16 @@
  
 ## Features
 ﻿
-* Word guessing gameplay
-* Reddit-themed vocabulary
-* Color-coded feedback system
-* Six-attempt challenge mode
-* Responsive user interface
-* Score tracking
+- Random Reddit words
+- Hint system
+- Score tracking
+- Restart game
+- Auto next question
+- Wordle-style color feedback
 
  ## Technologies Used
 ﻿
-* TypeScript
-* React
-* Next.js
+* JavaScript
 * HTML
 * CSS
 
