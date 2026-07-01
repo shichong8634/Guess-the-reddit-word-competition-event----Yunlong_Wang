@@ -13,7 +13,7 @@ body{
 }
 
 .container{
-    margin-top:100px;
+    margin-top:10px;
 }
 
 .title{
@@ -84,4 +84,13 @@ body{
     padding:15px;
     border-radius:10px;
     color:dimgray;
+}
+
+.picture_confusion{
+    width:200px;
+    height:200px;
+    background-image: url("confusion-picture.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
