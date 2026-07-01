@@ -1,11 +1,17 @@
 body{
-    background-color: white;
+    background: linear-gradient(135deg, deepskyblue, dodgerblue, cornflowerblue);
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
+.help-title{
+    margin-top:220px;
+    color: #e0f2fe;
+    font-size: 40px;
+}
+
 .author{
-    margin: 0 auto;
+    margin:auto;
     text-align: center;
     border: 1px solid grey;
     width:240px;
@@ -18,20 +24,45 @@ body{
 
 .title{
     text-align: center;
-    color: darkblue;
+    color: #e0f2fe;
     font-weight: bold;
+    font-size: 48px;
+
+    margin-top:30px;
+    margin-bottom:20px;
+    text-shadow:0 2px 6px rgba(0,0,0,0.2);
 }
 
-.index-button{
-    width:120px;
-    padding:15px;
-    font-size:15px;
-    border-radius:10px;
-    cursor:pointer;
+.index-button {
+    width: 140px;
+    padding: 12px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #0b1f4b;
+
+    background: #ffffff;
+    border: none;
+    border-radius: 12px;
+
+    cursor: pointer;
+    transition: all 0.25s ease;
+
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.index-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    filter: brightness(1.1);
+}
+
+.index-button:active {
+    transform: scale(0.96);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .author{
-    margin-top:65px;
+    margin-top:180px;
 }
 
 .help_content{
@@ -87,10 +118,17 @@ body{
 }
 
 .picture_confusion{
-    width:200px;
-    height:200px;
+    width:150px;
+    height:150px;
     background-image: url("confusion-picture.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
